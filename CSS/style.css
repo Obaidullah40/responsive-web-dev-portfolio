@@ -1,0 +1,232 @@
+
+.open-sans-normal {
+      font-family: "Open Sans", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
+
+
+/* ---- header ---- */
+.header{
+      background-image: url(images/developer.png), url(images/header_bg.png);
+      background-repeat: no-repeat;
+      background-position: top left, bottom right;
+}
+.secondary-bg{
+      background-color: #FFF8F3;
+}
+
+/* <<<<<<<<  Nav styles >>>>>>>> */
+nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px 200px;
+}
+
+.nev-r{
+      color: #FD6E0A;
+}
+.nav-title{
+      font-weight: 800;
+      font-size: 45px;
+}
+nav ul{
+      display: flex;
+      align-items: center;
+}
+nav ul li {
+      list-style: none;
+      margin: 51px;
+}
+nav ul a{
+      text-decoration: none;
+      font-size: 20px;
+}
+.dark-2 {
+      color: #474747;
+}
+
+.btn-orange {
+      background-color: #FD6E0A;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      padding: 18px 35px;
+      border-radius: 5px;
+      border: none;
+}
+
+/* <<<<<<<<<< banner >>>>>>>>>>> */
+.btn-whaie{
+      background-color: white;
+      font-weight: bold;
+      font-size: 20px;
+      color: #FD6E0A;
+      padding: 18px 35px;
+      border-radius: 5px;
+      border-color: #FD6E0A;
+      /* border: 5px; */
+}
+.banner{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 35px 0 210px;
+}
+
+.banner-content{
+      max-width: 584px;
+}
+.banner-greetings{
+      font-weight: 600;
+      font-size: 45px;
+}
+.banner-title{
+      font-weight: 700;
+      font-size: 85px;
+}
+
+.banner-profile-pic{
+      width: 584px;
+}
+
+
+/*________>>>>>>>>>>>>> Main <<<<<<<<<<<<________ */
+main{
+      margin: 0 auto;
+      max-width: 1140px;
+}
+
+main section{
+      margin: 130px auto;
+}
+
+/* <<<<<<<<< About >>>>>>>>> */
+.about{
+      border-radius: 5px;
+      padding: 30px 150px;
+      margin-top: 130px;
+}
+.text-center{
+      text-align: center;
+}
+.section-title{
+      font-weight: 700;
+      font-size: 35px;
+      color: #181818;
+}
+.section-description{
+      font-size: 18px;
+      color: #757575;
+}
+
+.about-items{
+      display: flex;
+      justify-content: space-around;
+}
+.item-title{
+      font-size: 20px;
+}
+.item-drscription{
+      font-weight: bold;
+      font-size: 20px;
+}
+
+/* <<<<<<<<< Skill >>>>>>>>> */
+.skills-container{
+      display: flex;
+      gap: 20px;
+}
+
+.skill{
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 6px 50px 0px rgba(32, 32, 32, 0.212);
+}
+
+/* <<<<<<<<<<< Resume >>>>>>>>>>>>>> */
+.resume-container{
+      display: flex;
+      gap: 70px;
+}
+.experience-title{
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 10px;
+}
+.experience-sub-title{
+      color: #757575;
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+}
+.experience-description{
+      color: #757575;
+}
+.experience{
+      margin: 30px 0px;
+}
+.btn-cv{
+      margin-top: 50px;
+}
+
+
+ /*>>>>>>>>>>>>>>>>>>> Footer <<<<<<<<<<<<<<<<<<<*/
+
+footer{
+      padding: 130px 230px;
+      display: flex;
+      gap: 100px;
+}
+
+.footer-column{
+      width: 50%;
+}
+
+footer input[type="text"], footer input[type="email"]{
+      height: 64px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: white;
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: 24px;
+      border: 0;
+}
+footer textarea{
+      border-radius: 5px;
+      background-color: white;
+      display: block;
+      padding: 10px 20px;
+      margin-bottom: 24px;
+      border: 0;
+      width: 100%;
+}
+
+
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+      nav ul, .skills-container, .resume-container, 
+      .about-items{
+            flex-direction: column;
+      }
+      .input,.about,
+      .banner-profile-pic{
+            width: calc(100% - 40px);
+      }
+      
+      footer,nav,
+      .about,.banner{
+            flex-direction: column;
+            padding: 20px 10px;
+            margin: auto;
+      }
+      .footer-column{
+            width: 100%;
+      }
+}
